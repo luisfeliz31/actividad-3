@@ -1,0 +1,44 @@
+@mixin button-styles($name,$property1,$value1,$property2,$value2,$property3,$value3,$property4,$value4,$property5,$value5,$property6,$value6)
+    .button-#{$name}
+        #{$property1}: $value1
+        @if $property1 == padding
+            #{$property1}: $value1
+        @else 
+            padding: 10px   
+        #{$property2}: $value2
+        @if $property2 == background-color
+            #{$property2}: $value2
+        @else 
+            background-color: red
+             
+        #{$property3}: $value3
+        @if $property3 == color
+            #{$property3}: $value3
+        @else 
+            color: black
+             
+        #{$property4}: $value4
+        @if $property4 == font-size
+            #{$property4}: $value4 
+        @else 
+            font-size: 5px
+        #{$property5}: $value5
+        @if $property5 == font-weight
+            #{$property5}: $value5
+        @else
+            font-weight: 25px 
+                
+        #{$property6}: $value6
+        @if $property6 == margin
+            #{$property6}: $value6
+        @else 
+            margin: 15px
+             
+
+
+
+@include button-styles(Inicio, padding,15px , margin,15px, color, green, color, orange, font-size, 50px, font-weight, 50px)
+@include button-styles(Contenido, padding,15px , margin,15px, background-color, yellow, color, red, font-size, 50px, font-weight, 50px)
+@include button-styles(Contactanos, padding,15px , margin,15px, background-color, orange, color, purple, font-size, 50px, font-weight, 50px)
+
+

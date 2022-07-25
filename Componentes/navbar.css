@@ -1,0 +1,20 @@
+body{
+    background-color: black;
+    background-image: url(../images/Goku.jpg);
+}
+
+.Logotipo{
+    width: 250px;
+    height: 250px;
+}
+
+.Navbar{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.Button{
+    display: flex;
+    flex-direction: row;
+}
